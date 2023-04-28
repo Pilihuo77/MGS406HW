@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Information</title>
+</head>
+<body>
+    <h1>Employee Information</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Birthdate</th>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee[0] }}</td>
+            <td>{{ employee[1] }}</td>
+            <td>{{ employee[2] }}</td>
+            <td>{{ employee[3] }}</td>
+            <td>{{ employee[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
