@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector as sql
-
+from flask_bootstrap import Bootstrap
 app = Flask(__name__)
+Bootstrap(app)
+
 
 # create the employee table
 def create_table():
@@ -71,3 +73,5 @@ def register_employee():
     return 'Employee registered successfully!'
 
 
+if __name__ == "__main__":
+    app.run(debug='True')

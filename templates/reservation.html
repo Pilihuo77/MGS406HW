@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reserve a Table</title>
+  </head>
+  <body>
+    <h1>Reserve a Table</h1>
+    <form action="/reservation" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="party_size">Party Size:</label>
+      <input type="number" id="party_size" name="party_size" min="1" required><br><br>
+      <label for="reservation_date">Reservation Date:</label>
+      <input type="date" id="reservation_date" name="reservation_date" required><br><br>
+      <label for="reservation_time">Reservation Time:</label>
+      <input type="time" id="reservation_time" name="reservation_time" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
